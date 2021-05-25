@@ -1,0 +1,35 @@
+a:visited {
+    color: red;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: yellow;
+}
+a:link {
+    color: blue;
+}
+
+caption {
+    text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+tr,td,th {
+    border: 1px solid black;
+    text-align: center;
+}
+tr{
+    height: 45px;
+}
+
+blockquote {
+    background-color: powderblue;
+    color: black;    
+    border-radius: 12px;
+}

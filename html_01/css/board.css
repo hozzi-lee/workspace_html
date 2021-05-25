@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* reset source */
+    body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, span {
+        margin: 0px;
+        padding: 0px;
+        font-family: "맑은 고딕", 돋움;
+        font-size: 12px;
+        }
+    /* //reset source */
+
+/* 게시판 외곽 */
+    #board {
+        width: 700px;
+        /* border: 1px solid #000000; */
+    }
+
+/************ 게시판 공통 ************/
+    .form-group {
+        padding: 5px;
+    }
+
+
+/* 폼 텍스트 */
+    .form-group .form-txt {
+        width: 80px;
+        display: inline-block;        
+    }
+    /* //폼 텍스트 */
+
+    /* .textarea {
+        vertical-align: top;
+    } */
+
+/* 게시판 선택 */
+    #sel-board {
+        width: 150px;
+    }
+
+/* 제목 */
+    #txt-title {
+        width: 600px;
+    }
+
+/* 비밀번호 */
+    #txt-pw {
+        width: 200px;
+    }
+
+/* 공개범위, 허용범위 */
+    input[type="radio"], [type="checkbox"] {
+        margin-right: 15px;
+    }
+
+/* 내용 */
+    #txt-content {
+        width: 686px;
+        height: 200px;
+    }
+
+/* 버튼 */
+    .btn-area {
+        text-align: center;
+        border-top: 1px solid #e6e6e6;
+        margin: 20px 0px 0px 0px;
+        padding: 8px 0px 0px 0px;
+    }
+
+    button {
+        width: 50px;
+        height: 25px;
+        background-color: #e6e6e6;
+        border: 1px outset #e1e1e1;
+        border-radius: 6px;
+        margin: 0px 10px 0px 0px;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: lightgray;
+    }
+
+    button:active {
+        border-style: inset;
+    }
+    /* //버튼 */
+
+    /* #input-file {
+        width: 150px;
+        height: 25px;
+        background-color: #e6e6e6;
+        border: 1px outset #e1e1e1;
+        border-radius: 6px;
+    } */

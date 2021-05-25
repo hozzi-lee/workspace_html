@@ -1,0 +1,62 @@
+        table {
+            border-collapse: collapse;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        th {
+            background-color: #dcdcdc;
+            height: 23px;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray
+        }
+
+        td {
+            text-align: center;
+            height: 23px;
+            border-bottom: 2px dotted gray;
+        }
+
+        tr:hover {
+            background-color: #ffff00;
+        }
+
+        .tr-5 {
+            border-bottom: 2px solid gray;
+        }
+
+        span {
+            text-decoration: underline;
+            color: #0000ff;
+            cursor: pointer;
+        }
+
+        button {
+            width: 60px;
+            background-color: skyblue;
+            font-size: 11px;
+            border: 3px outset skyblue;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 3px;
+            float: right;
+            color: white;
+        }
+
+        button:hover {
+            background-color: powderblue;
+        }
+
+        button:active {
+            background-color: skyblue;
+            border-style: inset;
+        }
+
+        div {
+            width: 720px;
+            margin-bottom: 35px;
+        }
+
+        .div-2 {
+            width: 720px;
+        }

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* #CONTENT */
+    /* MAIN */
+    #full-content #profile-img {
+        float: left;
+        width: 300px;
+        margin: 0px 20px 0px 0px;
+        /* display: block; */
+    }
+
+    #full-content #greetings {
+        float: left;
+    }
+
+    #full-content #greetings #greet {
+        margin: 0px 0px 40px 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #full-content #greetings #desc {
+        font-size: 15px;
+    }
+        /* -- MAIN */

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5</title>
+
+    <style>
+        /* 
+        input[type="password"] {font-size: 50px;}
+         */
+        input[name="userpw"] {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>&#35; 목차</h1>
+    <h4>
+        <ol>
+            <li><a href="./ex01.html">&lt;h1~h6&gt; TAG</a></li>
+            <li><a href="./ex02.html">&lt;p&gt;, &lt;br&gt;, &lt;blockquote&gt;, &lt;q&gt;, &lt;strong&gt;, &lt;b&gt;,
+                    &lt;em&gt;, &lt;i&gt; TAG</a></li>
+            <li><a href="./ex03.html">&lt;ol&gt;, &lt;ul&gt; TAG</a></li>
+            <li><a href="./ex04.html">&lt;img&gt;, &lt;a&gt; TAG</a></li>
+            <li><a href="./ex05.html">&lt;table&gt;_thead, tbody, tfoot, tr, th, td TAG</a></li>
+            <li><a href="./ex06.html">table merge_&lt;colspan&gt;, &lt;rowspan&gt; TAG</a></li>
+            <li><a href="./ex07.html">table &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; TAG</a></li>
+            <li><a href="./ex08.html">table total exercises</a></li>
+            <li><a href="./ex09.html">&lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;select&gt;, &lt;button&gt;,
+                    &lt;textarea&gt; TAG</a></li>
+        </ol>
+    </h4>
+
+    <hr>
+
+    <h1>html TAG</h1>
+    <h2>9. &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;select&gt;, &lt;button&gt;, &lt;textarea&gt; TAG</h2>
+
+    <form action="join.jsp" method="get">
+        <!-- get = open / post = hidden -->
+        <label for="txt-uid">아이디</label>
+        <input type="text" id="txt-uid" name="userid" value="" placeholder="아이디는 8~16자"><br>
+        <!--
+            name = 필수! 전송되는 곳과 일치 시켜야 됨
+            label for = input id 일치 시켜야 됨
+        -->
+
+        <label for="txt-upw">비밀번호</label>
+        <input type="password" id="txt-upw" name="userpw" value="" placeholder="password"><br>
+
+        <label for="txt-name">이름</label>
+        <input type="text" id="txt-name" name="username" value="" placeholder="이름"><br>
+
+        <label for="file-proimg">프로필사진</label>
+        <input type="file" id="file-proimg" name="file" value=""><br>
+
+        <label for="rdo-apple">사과</label>
+        <input type="radio" id="rdo-apple" name="fruits" value="apple">
+
+        <label for="rdo-grape" style="margin-right:-12px;">포도</label>
+        <input type="radio" id="rdo-grape" name="fruits" value="grape" checked="checked">
+
+        <label for="rdo-orange">오렌지</label>
+        <input type="radio" id="rdo-orange" name="fruits" value="orange">
+
+        <br>
+
+        <label for="rdo-m1">1월</label>
+        <input type="radio" id="rdo-m1" name="month" value="1">
+
+        <label for="rdo-m2">2월</label>
+        <input type="radio" id="rdo-m2" name="month" value="2">
+
+        <label for="rdo-m3">3월</label>
+        <input type="radio" id="rdo-m3" name="month" value="3">
+        <!--
+            radio - name = 중복선택 안되도록 그룹화 / value = 보내는 값
+        -->
+
+        <br>
+        <br>
+
+        <label for="chk-book">독서</label>
+        <input type="checkbox" id="chk-book" name="hobby" value="read-book">
+
+        <label for="chk-music">음악</label>
+        <input type="checkbox" id="chk-music" name="hobby" value="music">
+
+        <label for="chk-trip">여행</label>
+        <input type="checkbox" id="chk-trip" name="hobby" value="trip">
+
+        <br>
+
+        <label for="chk-dog">개</label>
+        <input type="checkbox" id="chk-dog" name="pet" value="dog">
+
+        <label for="chk-cat">고양이</label>
+        <input type="checkbox" id="chk-cat" name="pet" value="cat" checked="checked">
+
+        <label for="chk-bird">새</label>
+        <input type="checkbox" id="chk-bird" name="pet" value="bird">
+
+
+
+        <p>else input type</p>
+        <input type="date"><br>
+        <input type="number"><br>
+        <input type="email"><br>
+        <input type="search"><br>
+        <input type="month"><br>
+        <input type="week"><br>
+        <input type="color"><br>
+        <input type="time"><br>
+        <input type="datetime-local"><br>
+        <input type="image"><br>
+        <input type="range"><br>
+        <input type="tel"><br>
+        <input type="url">
+
+
+        <br>
+        <br>
+
+        <label for="telecom">이동통신사</label>
+        <select name="telecom" id="telecom">
+            <option value="">선택하세요</option>
+            <option value="sk">SKT</option>
+            <option value="kt">KT</option>
+            <option value="lg">LGU+</option>
+            <option value="etc">기타</option>
+        </select>
+
+        <br>
+
+        <label for="tele">이동통신사</label>
+        <input list="telecoms" name="telecoms" id="tele">
+        <datalist id="telecoms">
+            <option value="SKT">
+            <option value="KT">
+            <option value="LGU+">
+            <option value="기타">
+        </datalist>
+
+        <br>
+        <br>
+
+        <label for="are-content">본문</label>
+        <textarea id="are-content" name="content" placeholder="의견을 적어주세요"></textarea>
+
+
+
+        <input type="hidden" name="code" value="123"><br>
+
+
+        <input type="submit" value="click me!" onclick="alert('전송 성공!')">
+        <button type="submit"><img src="./img/jung.jpg" alt="전송버튼" width="20px"></button>
+        <button type="reset">초기화</button>
+        <!--
+            button 추천 : 디자인(사진 등)을 넣을 수 있다.
+            input : only text
+        -->
+
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+
+    <form action="hogin.jsp">
+        <p>
+            <label for="u-id">아이디 : </label> <input type="text" id="u-id" name="u-id" value="" placeholder="아이디를 입력하세요">
+        </p>
+        <p>
+            <label for="u-pw">패스워드 : </label> <input type="password" id="u-pw" name="u-pw" value="" placeholder="패스워드를 입력하세요">
+        </p>
+        <p>
+            <label for="u-name">이름</label> <input type="text" id="u-name" name="u-name" value="" placeholder="이름을 입력하세요">
+        </p>
+        <p>
+            <label for="u-pf">프로필사진</label> <input type="file" id="u-pf" name="u-profile" value="">
+        </p>
+        <p>
+            <label for="u-add">주소</label> <input type="text" id="u-Zc" name="u-Zc" value="" placeholder="우편번호를 입력하세요"> <button type="button" onclick="window.open('https://unipass.customs.go.kr/csp/com/bsopcomn/baseinfo/otsd/COM0101042Q.do?reqForm=MYC1102011S_custPsno%7CMYC1102011S_custBscsAddr%7CMYC1102011S_custRoadNmCd%7CMYC1102011S_custBldgMtNo&reqValue=psno%7CaddrRoadNm%7CroadNmCd%7CbldgMtNo&psno');">우편번호찾기</button><br>
+            <input type="text" id="u-add" name="u-add" value="" placeholder="주소를 입력하세요">
+        </p>
+        <p>
+            <label for="u-telecom">이동통신사</label> <select name="u-telecom" id="u-telecom">
+                <option value="SK">SK</option>
+                <option value="KT">KT</option>
+                <option value="LG">LG U<sup>+</sup></option>
+                <option value="" selected="selected">선택해주세요</option>
+            </select>
+        </p>
+        <p>
+            <label>나이</label>
+            <label for="10y">10대</label> <input type="radio" id="10y" name="u-age" value="10~19" checked="checked">
+            <label for="20y">20대</label> <input type="radio" id="20y" name="u-age" value="20~29">
+            <label for="30y">30대</label> <input type="radio" id="30y" name="u-age" value="30~39">
+            <label for="40y">40대</label> <input type="radio" id="40y" name="u-age" value="40~49">
+            <label for="50y~">기타</label> <input type="radio" id="50y~" name="u-age" value="50~">
+        </p>
+        <p>
+            <label>취미</label>
+            <label for="h-book">독서</label> <input type="checkbox" id="h-book" name="hobby" value="readbook" checked="checked">
+            <label for="h-music">음악</label> <input type="checkbox" id="h-music" name="hobby" value="music">
+            <label for="h-trip">여행</label> <input type="checkbox" id="h-trip" name="hobby" value="trip">
+            <label for="h-movie">영화</label> <input type="checkbox" id="h-movie" name="hobby" value="movie">
+            <label for="h-coding">코딩</label> <input type="checkbox" id="h-coding" name="hobby" value="coding">
+            <label for="h-etc">기타</label> <input type="checkbox" id="h-etc" name="hobby" value="etc">
+        </p>
+        <p>
+            <label for="txt-area">자기소개</label> <textarea name="myself" id="txt-area" cols="60" rows="8" placeholder="5줄 이상 적어주세요"></textarea>
+        </p>
+        <p>
+            <button type="submit">등록</button> <button type="reset">초기화</button>
+        </p>
+    </form>
+
+</body>
+
+</html>

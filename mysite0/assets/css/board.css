@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+/* SEARCH AREA */
+#board #search-area {
+    margin: 0px 0px 10px 0px;
+}
+
+#board #search-area form {
+    float: right;
+    /* text-align: right; */
+}
+
+#board #search-area form input[type="text"] {
+    width: 150px;
+    height: 25px;
+}
+
+#board #search-area form button {
+    padding: 3px 5px 3px 5px;
+}
+    /* -- SEARCH AREA */
+
+
+
+/* NOTICE BOARD */
+
+#board #board-list {
+    margin: 0px 0px 10px 0px;
+}
+
+#board #board-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    text-align: center;
+}
+
+#board #board-list table > thead > tr > th {
+    background-color: #dddddd;
+}
+
+#board #board-list table > tbody > tr {
+    border-top: 1px dotted #808080;
+}
+
+#board #board-list table > thead > tr > th, #board #board-list table > tbody > tr > td {
+    padding: 8px 5px 8px 5px;
+}
+    /* -- NOTICE BOARD */
+
+
+/* PAGING */
+
+#board #pager {
+    text-align: center;
+}
+
+#board #pager ol {
+    display: inline-block;
+    width: 159px;
+    /* margin: 0px auto; */
+    
+}
+
+#board #pager ol > li {
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+
+#board #pager ol > li > a.active {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+}
+
+#board #pager #btn-write {
+    float: right;
+    padding: 5px 10px;
+    background-color: #dddddd;
+    border: 1px solid #808080;
+    border-radius: 7px;
+}

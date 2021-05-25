@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Training: signup</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+    <!-- form frame -->
+    <div id="form">
+
+        <!-- form - 1 -->
+        <form action="asd.jpg" method="get">
+
+            <!-- ID -->
+            <div>
+                <label for="signup-id" class="label-size">아이디</label>
+                <input id="signup-id" type="text" name="user-id" placeholder="아이디를 입력하세요" value="" class="input-size1">
+            </div>
+            <!-- // ID -->
+
+            <!-- PASSWORD -->
+            <div>
+                <label for="signup-pw" class="label-size">패스워드</label>
+                <input id="signup-pw" type="password" name="user-pw" placeholder="비밀번호를 입력하세요" value=""
+                    class="input-size1">
+            </div>
+            <!-- // PASSWORD -->
+
+            <!-- NAME -->
+            <div>
+                <label for="signup-name" class="label-size">이름</label>
+                <input id="signup-name" type="text" name="user-name" placeholder="이름을 입력하세요" value=""
+                    class="input-size1">
+            </div>
+            <!-- // NAME -->
+
+            <!-- PROFILE PICTURE -->
+            <div>
+                <label for="signup-pf" class="label-size">프로필사진</label>
+                <input id="signup-pf" type="file" name="user-pf">
+            </div>
+            <!-- // PROFILE PICTURE -->
+
+            <!-- ADDRESS -->
+            <div class="clearfix">
+                <div class="float-l">
+                    <label for="signup-ad" class="label-size">주소</label>
+                </div>
+                <div class="float-l">
+                    <input type="text" name="user-post_number" placeholder="우편번호" class="input-size1 margin-1"> <button
+                        id="signup-ad">우편번호찾기</button><br>
+                    <input type="text" name="user-address" placeholder="주소" class="input-size2">
+                </div>
+            </div>
+            <!-- // ADDRESS -->
+
+            <!-- TELECOM -->
+            <div>
+                <label for="signup-telecom" class="label-size">이동통신사</label>
+                <select id="signup-telecom" name="user-telecom">
+                    <option value="" selected="selected">선택해주세요</option>
+                    <option value="KT">KT</option>
+                    <option value="SKT">SKT</option>
+                    <option value="LG">LG</option>
+                    <option value="etc">기타</option>
+                </select>
+            </div>
+            <!-- // TELECOM -->
+
+            <!-- AGE -->
+            <div>
+                <label class="label-size">나이</label>
+                <label for="age-10">10대</label>
+                <input id="age-10" type="radio" name="user-age" value="10th">
+                <label for="age-20">20대</label>
+                <input id="age-20" type="radio" name="user-age" value="20th">
+                <label for="age-30">30대</label>
+                <input id="age-30" type="radio" name="user-age" value="30th">
+                <label for="age-40">40대</label>
+                <input id="age-40" type="radio" name="user-age" value="40th">
+                <label for="age-50~">기타</label>
+                <input id="age-50~" type="radio" name="user-age" value="50th~">
+            </div>
+            <!-- // AGE -->
+
+            <!-- HOBBY -->
+            <div>
+                <label class="label-size">취미</label>
+                <label for="hb-read">독서</label>
+                <input id="hb-read" type="checkbox" name="user-hobby" value="readbook" checked="checked">
+                <label for="hb-music">음악</label>
+                <input id="hb-music" type="checkbox" name="user-hobby" value="music">
+                <label for="hb-trip">여행</label>
+                <input id="hb-trip" type="checkbox" name="user-hobby" value="trip">
+                <label for="hb-movie">영화</label>
+                <input id="hb-movie" type="checkbox" name="user-hobby" value="movie">
+                <label for="hb-cording">코딩</label>
+                <input id="hb-cording" type="checkbox" name="user-hobby" value="cording">
+                <label for="hb-etc">기타</label>
+                <input id="hb-etc" type="checkbox" name="user-hobby" value="etc">
+            </div>
+            <!-- // HOBBY -->
+
+            <!-- INTRODUCE -->
+            <div>
+                <label for="signup-self" class="label-size txt-vertical">자기소개</label>
+                <textarea id="signup-self" name="user-self" placeholder="20자 이상 적어주세요" value="" class="input-size3"></textarea>
+            </div>
+            <!-- // INTRODUCE -->
+
+            <!-- BUTTON -->
+            <div id="last-bt">
+                <button type="submit" class=last-bt>등 록</button> <button type="reset" class=last-bt>초기화</button>
+            </div>
+            <!-- // BUTTON -->
+
+        </form>
+        <!-- // form - 1 -->
+
+    </div>
+    <!-- // form - frame -->
+</body>
+
+</html>

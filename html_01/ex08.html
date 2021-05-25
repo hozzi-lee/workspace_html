@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5</title>
+    <style>
+        td,th {
+            text-align: center;
+            border: 2px dotted black;
+        }
+
+        table {
+            border: 4px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>&#35; 목차</h1>
+    <h4>
+        <ol>
+            <li><a href="./ex01.html">&lt;h1~h6&gt; TAG</a></li>
+            <li><a href="./ex02.html">&lt;p&gt;, &lt;br&gt;, &lt;blockquote&gt;, &lt;q&gt;, &lt;strong&gt;, &lt;b&gt;,
+                    &lt;em&gt;, &lt;i&gt; TAG</a></li>
+            <li><a href="./ex03.html">&lt;ol&gt;, &lt;ul&gt; TAG</a></li>
+            <li><a href="./ex04.html">&lt;img&gt;, &lt;a&gt; TAG</a></li>
+            <li><a href="./ex05.html">&lt;table&gt;_thead, tbody, tfoot, tr, th, td TAG</a></li>
+            <li><a href="./ex06.html">table merge_&lt;colspan&gt;, &lt;rowspan&gt; TAG</a></li>
+            <li><a href="./ex07.html">table &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; TAG</a></li>
+            <li><a href="./ex08.html">table total exercises</a></li>
+            <li><a href="./ex09.html">&lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;select&gt;, &lt;button&gt;, &lt;textarea&gt; TAG</a></li>
+        </ol>
+    </h4>
+
+    <hr>
+
+    <h1>html TAG</h1>
+    <h2>8. table total exercises</h2>
+
+    <p>테이블 종합 연습문제</p>
+
+    <table border="3">
+        <colgroup>
+            <col style="width:95px;">
+            <col style="width:80px;">
+            <col style="width:120px;">
+            <col style="width:180px;">
+            <col style="width:80px;">
+        </colgroup>
+        <caption>모집분야</caption>
+        <thead>
+            <tr>
+                <th colspan="2">모집직군</th>
+                <!--<th></th>-->
+                <th>모집전공</th>
+                <th>비고</th>
+                <th>근무지</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2">생산기술직</th>
+                <!--<th></th>-->
+                <td>화학공학</td>
+                <td rowspan="3">전공관련 자격증 우대</td>
+                <td rowspan="5">충남 서산</td>
+            </tr>
+            <tr>
+                <th rowspan="2">생산지원직</th>
+                <td>공무</td>
+                <td>기계, 전기</td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+            </tr>
+            <tr>
+                <!--<th></th>-->
+                <td>안전환경</td>
+                <td>안전, 환경</td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+            </tr>
+            <tr>
+                <th colspan="2">연구개발직</th>
+                <!--<th></th>-->
+                <td>화학, 화학공학</td>
+                <td>석사</td>
+                <!--<td></td>-->
+            </tr>
+            <tr>
+                <th colspan="2">경영지원직</th>
+                <!--<th></th>-->
+                <td>상경계열</td>
+                <td></td>
+                <!--<td></td>-->
+            </tr>
+            <tr>
+                <th colspan="2">영업마케팅직</th>
+                <!--<th></th>-->
+                <td>상경계열</td>
+                <td></td>
+                <td>서울 중구</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

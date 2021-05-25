@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+/* a:visited {
+    color: red;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: yellow;
+}
+a:link {
+    color: blue;
+} */
+
+/* caption {
+    text-align: left;
+} */
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+tr,td,th {
+    border: 1px solid black;
+    text-align: center;
+    /* vertical-align: baseline; */
+}
+tr{
+    height: 40px;
+}
+
+blockquote {
+    background-color: powderblue;
+    color: black;    
+    border-radius: 12px;
+}
+
+.text-style {
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.text-style-2 {
+    vertical-align: text-top;
+    /* writing-mode: vertical-lr;
+    text-orientation: upright; */
+}
+
+.txt-style-3 {
+    font-size: 13px;
+}
+
+.td-style {
+    height: 70px;
+}

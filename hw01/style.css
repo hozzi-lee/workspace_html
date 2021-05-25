@@ -1,0 +1,27 @@
+a:visited {
+    color: red;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: yellow;
+}
+a:link {
+    color: blue;
+}
+table {
+    border-collapse: collapse;
+    border: 3px solid blue;
+    background-color: powderblue;
+}
+th,td {
+    border: 1px solid blue;    
+}
+th {
+    background-color: blue;
+    color: white;
+}
+.table1 {
+    text-align: center;
+}
